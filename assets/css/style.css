@@ -96,14 +96,26 @@ img {
    color: var(--color-brand);
 }
 
+.nav-link {
+   color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width: 768px) {
+
+   .nav-link {
+      color: black !important;
+   }
+} /* it helped me to manage the color of the menu on mobile*/
+
 @media (min-width: 992px) {
    .navbar {
       min-height: 100vh;
       width: var(--sidbar-width);
       background: linear-gradient(
-         rgba(232, 232, 232, 0.8),
+         rgba(0, 0, 0, 0.8),
          rgba(189, 90, 9, 0.8)
       );
+      color: #fefefe;
       background-size: cover;
       background-position: center;
    }
